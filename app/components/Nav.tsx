@@ -7,13 +7,15 @@ export default function Nav() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-200 ${
+      aria-label="Main navigation"
+      className={`sticky top-0 z-50 transition-[background-color,backdrop-filter] duration-200 ${
         scrolled
           ? "bg-[#0a0a0a]/80 backdrop-blur-md"
           : "bg-[#0a0a0a]"
@@ -28,7 +30,7 @@ export default function Nav() {
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="text-[13px] text-[#555] hover:text-[#888] transition-colors duration-150"
+              className="text-[13px] text-[#888] hover:text-[#aaa] transition-colors duration-150"
             >
               {link}
             </a>
