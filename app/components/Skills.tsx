@@ -1,15 +1,31 @@
 const skills = [
   {
+    category: "Languages",
+    items: ["Java", "Python", "TypeScript", "JavaScript", "Dart", "HTML", "CSS"],
+  },
+  {
     category: "Mobile",
-    items: ["Flutter", "Dart"],
+    items: ["Flutter", "Riverpod", "SQLite", "ML Kit"],
   },
   {
-    category: "Backend",
-    items: ["Java", "Spring Boot", "Python", "Docker"],
+    category: "Web & Backend",
+    items: ["React", "Node.js", "Express.js"],
   },
   {
-    category: "AI",
-    items: ["LLM / RAG", "Claude API", "MCP"],
+    category: "AI / LLM",
+    items: ["LLM / RAG", "Claude API", "Ollama", "MCP"],
+  },
+  {
+    category: "Databases",
+    items: ["PostgreSQL", "MySQL", "SQLite"],
+  },
+  {
+    category: "Testing",
+    items: ["JUnit5", "TestNG", "REST Assured", "Selenium", "Appium", "Patrol"],
+  },
+  {
+    category: "DevOps & Tools",
+    items: ["Docker", "Git", "GitHub Actions", "Jenkins", "AWS", "Postman"],
   },
 ];
 

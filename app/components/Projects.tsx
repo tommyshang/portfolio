@@ -1,23 +1,30 @@
 const projects = [
   {
-    title: "Project Alpha",
+    title: "Fridge",
     description:
-      "A cross-platform mobile application for real-time data tracking with an offline-first architecture.",
-    stack: ["Flutter", "Dart", "Spring Boot"],
+      "iOS pantry tracker with a real-time OCR pipeline (ML Kit) that extracts expiry dates from live camera frames and barcode lookup via Open Food Facts — built on Flutter/Riverpod with local SQLite, push notifications, and an E2E test suite via Patrol.",
+    stack: ["Flutter", "Dart", "Riverpod", "SQLite", "ML Kit", "Patrol"],
     github: "https://github.com/tommyshang",
   },
   {
-    title: "Project Beta",
+    title: "FoodLingo",
     description:
-      "A RAG-powered knowledge assistant that indexes private documents and answers questions in natural language.",
-    stack: ["Python", "Claude API", "Docker"],
+      "Cross-platform app that photographs foreign-language restaurant menus and returns translated, allergy-filtered dish data in real time — with cart, scan history, and text-to-speech playback built on a feature-based clean architecture.",
+    stack: ["Flutter", "Dart", "Riverpod", "Supabase", "flutter_tts"],
     github: "https://github.com/tommyshang",
   },
   {
-    title: "Project Gamma",
+    title: "Lumiflow",
     description:
-      "A microservices backend platform with authentication, event streaming, and containerized deployment.",
-    stack: ["Java", "Spring Boot", "Docker"],
+      "Manifest V3 Chrome extension that extracts webpage content and renders it as a focused, sentence-by-sentence reading flow with two interchangeable word-coloring engines (grammar-based and semantic-based) to aid comprehension.",
+    stack: ["TypeScript", "React", "Chrome Extension MV3", "Jest", "esbuild"],
+    github: "https://github.com/tommyshang",
+  },
+  {
+    title: "VaultMind",
+    description:
+      "Fully local RAG pipeline over a personal Obsidian vault — heading-aware chunking, hybrid vector + BM25 retrieval via Reciprocal Rank Fusion, and a RAGAS evaluation harness that improved Context Recall from 0.74 to 0.81 and Faithfulness from 0.79 to 0.85.",
+    stack: ["Node.js", "TypeScript", "Express", "PostgreSQL", "PGVector", "Ollama", "Docker"],
     github: "https://github.com/tommyshang",
   },
 ];
