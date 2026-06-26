@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version C — Editorial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    html { background: #0a0a0a; color: #ededed; }
+    .section-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: #333; font-weight: 600; margin-bottom: 40px; }
+    .project-num { font-size: 11px; color: #2a2a2a; font-weight: 500; letter-spacing: 0.05em; margin-bottom: 10px; }
+    .divider { border: none; border-top: 1px solid #141414; margin: 0; }
+    a:hover { color: #ededed !important; }
+  </style>
+</head>
+<body style="background:#0a0a0a;color:#ededed;margin:0;">
+
+  <!-- Label -->
+  <div style="position:fixed;bottom:20px;right:20px;background:#111;border:1px solid #222;padding:8px 14px;border-radius:6px;font-size:11px;color:#555;letter-spacing:0.08em;z-index:100;">VERSION C — EDITORIAL</div>
+
+  <!-- Nav -->
+  <nav style="position:sticky;top:0;z-index:50;padding:0 48px;height:52px;display:flex;align-items:center;justify-content:space-between;max-width:100%;">
+    <span style="font-size:13px;font-weight:700;color:#ededed;letter-spacing:-0.02em;">NS</span>
+    <div style="display:flex;gap:36px;">
+      <a href="#about" style="font-size:12px;color:#3a3a3a;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase;font-weight:500;font-size:11px;transition:color 0.15s;">About</a>
+      <a href="#skills" style="font-size:12px;color:#3a3a3a;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase;font-weight:500;font-size:11px;transition:color 0.15s;">Skills</a>
+      <a href="#projects" style="font-size:12px;color:#3a3a3a;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase;font-weight:500;font-size:11px;transition:color 0.15s;">Projects</a>
+      <a href="#contact" style="font-size:12px;color:#3a3a3a;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase;font-weight:500;font-size:11px;transition:color 0.15s;">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section style="min-height:calc(100vh - 52px);display:flex;flex-direction:column;justify-content:flex-end;padding:0 48px 72px;">
+    <div>
+      <p style="font-size:13px;color:#333;letter-spacing:0.04em;margin-bottom:20px;">Software Engineer</p>
+      <h1 style="font-size:clamp(72px,12vw,140px);font-weight:900;letter-spacing:-0.05em;line-height:0.9;color:#ededed;margin:0 0 36px;">Niu<br>Shang</h1>
+      <div style="display:flex;align-items:center;gap:32px;padding-top:32px;border-top:1px solid #161616;">
+        <p style="font-size:14px;color:#444;line-height:1.6;max-width:380px;margin:0;">Building mobile experiences, scalable backends, and intelligent systems.</p>
+        <div style="display:flex;gap:12px;margin-left:auto;">
+          <a href="https://github.com/tommyshang" target="_blank" style="font-size:12px;color:#555;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;font-weight:500;padding:10px 20px;border:1px solid #1e1e1e;border-radius:4px;transition:all 0.15s;">GitHub</a>
+          <a href="https://www.linkedin.com/in/niu-shang/" target="_blank" style="font-size:12px;color:#333;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;font-weight:500;padding:10px 20px;border:1px solid #161616;border-radius:4px;transition:all 0.15s;">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" style="padding:96px 48px;border-top:1px solid #141414;">
+    <div style="max-width:1000px;">
+      <div class="section-label">— About</div>
+      <p style="font-size:20px;color:#555;line-height:1.7;max-width:640px;font-weight:300;">Software engineer with a focus on mobile development, backend systems, and AI-powered applications. Passionate about building products that are fast, reliable, and thoughtfully designed. Currently exploring the intersection of large language models and real-world product experiences.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" style="padding:96px 48px;border-top:1px solid #141414;">
+    <div style="max-width:1000px;">
+      <div class="section-label">— Skills</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid #141414;border-radius:8px;overflow:hidden;">
+        <div style="padding:32px;border-right:1px solid #141414;">
+          <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#2e2e2e;font-weight:600;margin-bottom:20px;">Mobile</div>
+          <div style="font-size:15px;color:#555;line-height:2.2;font-weight:300;">Flutter<br>Dart</div>
+        </div>
+        <div style="padding:32px;border-right:1px solid #141414;">
+          <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#2e2e2e;font-weight:600;margin-bottom:20px;">Backend</div>
+          <div style="font-size:15px;color:#555;line-height:2.2;font-weight:300;">Java<br>Spring Boot<br>Python<br>Docker</div>
+        </div>
+        <div style="padding:32px;">
+          <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#2e2e2e;font-weight:600;margin-bottom:20px;">AI</div>
+          <div style="font-size:15px;color:#555;line-height:2.2;font-weight:300;">LLM / RAG<br>Claude API<br>MCP</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" style="padding:96px 48px;border-top:1px solid #141414;">
+    <div style="max-width:1000px;">
+      <div class="section-label">— Projects</div>
+      <div>
+        <hr class="divider">
+        <div style="padding:40px 0;display:grid;grid-template-columns:80px 1fr auto;gap:32px;align-items:start;">
+          <div class="project-num">01</div>
+          <div>
+            <div style="font-size:17px;font-weight:600;color:#ededed;letter-spacing:-0.02em;margin-bottom:10px;">Project Alpha</div>
+            <div style="font-size:14px;color:#444;line-height:1.7;max-width:500px;">A cross-platform mobile application for real-time data tracking with an offline-first architecture.</div>
+            <div style="margin-top:16px;font-size:12px;color:#2e2e2e;letter-spacing:0.04em;">Flutter · Dart · Spring Boot</div>
+          </div>
+          <a href="#" style="font-size:11px;color:#333;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;padding-top:4px;transition:color 0.15s;">GitHub ↗</a>
+        </div>
+        <hr class="divider">
+        <div style="padding:40px 0;display:grid;grid-template-columns:80px 1fr auto;gap:32px;align-items:start;">
+          <div class="project-num">02</div>
+          <div>
+            <div style="font-size:17px;font-weight:600;color:#ededed;letter-spacing:-0.02em;margin-bottom:10px;">Project Beta</div>
+            <div style="font-size:14px;color:#444;line-height:1.7;max-width:500px;">A RAG-powered knowledge assistant that indexes private documents and answers questions in natural language.</div>
+            <div style="margin-top:16px;font-size:12px;color:#2e2e2e;letter-spacing:0.04em;">Python · Claude API · Docker</div>
+          </div>
+          <a href="#" style="font-size:11px;color:#333;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;padding-top:4px;transition:color 0.15s;">GitHub ↗</a>
+        </div>
+        <hr class="divider">
+        <div style="padding:40px 0;display:grid;grid-template-columns:80px 1fr auto;gap:32px;align-items:start;">
+          <div class="project-num">03</div>
+          <div>
+            <div style="font-size:17px;font-weight:600;color:#ededed;letter-spacing:-0.02em;margin-bottom:10px;">Project Gamma</div>
+            <div style="font-size:14px;color:#444;line-height:1.7;max-width:500px;">A microservices backend platform with authentication, event streaming, and containerized deployment.</div>
+            <div style="margin-top:16px;font-size:12px;color:#2e2e2e;letter-spacing:0.04em;">Java · Spring Boot · Docker</div>
+          </div>
+          <a href="#" style="font-size:11px;color:#333;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;padding-top:4px;transition:color 0.15s;">GitHub ↗</a>
+        </div>
+        <hr class="divider">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="padding:96px 48px;border-top:1px solid #141414;">
+    <div style="max-width:1000px;">
+      <div class="section-label">— Contact</div>
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <a href="mailto:niushang1997@gmail.com" style="font-size:16px;color:#444;text-decoration:none;font-weight:300;transition:color 0.15s;">niushang1997@gmail.com ↗</a>
+        <a href="https://www.linkedin.com/in/niu-shang/" target="_blank" style="font-size:16px;color:#444;text-decoration:none;font-weight:300;transition:color 0.15s;">linkedin.com/in/niu-shang ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:28px 48px;border-top:1px solid #141414;">
+    <div style="font-size:11px;color:#222;letter-spacing:0.06em;text-transform:uppercase;">© 2025 Niu Shang</div>
+  </footer>
+
+</body>
+</html>
