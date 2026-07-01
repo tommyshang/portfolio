@@ -25,7 +25,7 @@ const projects = [
     description:
       "Fully local RAG pipeline over a personal Obsidian vault — heading-aware chunking, hybrid vector + BM25 retrieval via Reciprocal Rank Fusion, and a RAGAS evaluation harness that improved Context Recall from 0.74 to 0.81 and Faithfulness from 0.79 to 0.85.",
     stack: ["Node.js", "TypeScript", "Express", "PostgreSQL", "PGVector", "Ollama", "Docker"],
-    github: "https://github.com/tommyshang",
+    github: "https://github.com/tommyshang/vaultmind",
   },
 ];
 
