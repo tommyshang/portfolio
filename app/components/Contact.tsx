@@ -1,29 +1,27 @@
+const links = [
+  { label: "Email", href: "mailto:niushang1997@gmail.com", external: false },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/niu-shang/", external: true },
+  { label: "GitHub", href: "https://github.com/tommyshang", external: true },
+];
+
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="max-w-[900px] mx-auto px-10 py-24 border-t border-[#161616]"
-    >
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
-        <h2 className="text-[13px] font-semibold text-[#ededed] tracking-tight pt-1">
+    <section id="contact" className="max-w-[1080px] mx-auto px-6">
+      <div className="border-t border-line pt-16 pb-12">
+        <h2 className="font-display text-[clamp(32px,5vw,44px)] font-bold tracking-tight leading-none text-accent2 mb-6">
           Contact
         </h2>
-        <div className="flex flex-col gap-4">
-          <a
-            href="mailto:niushang1997@gmail.com"
-            aria-label="Send email to niushang1997@gmail.com"
-            className="text-[15px] text-[#555] hover:text-[#888] transition-colors duration-150"
-          >
-            niushang1997@gmail.com ↗
-          </a>
-          <a
-            href="https://www.linkedin.com/in/niu-shang/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[15px] text-[#555] hover:text-[#888] transition-colors duration-150"
-          >
-            linkedin.com/in/niu-shang ↗
-          </a>
+        <div className="flex flex-col items-start gap-3 text-lg font-medium text-muted">
+          {links.map(({ label, href, external }) => (
+            <a
+              key={label}
+              href={href}
+              {...(external && { target: "_blank", rel: "noopener noreferrer" })}
+              className="hover:text-accent2 transition-colors duration-200"
+            >
+              {label} ↗
+            </a>
+          ))}
         </div>
       </div>
     </section>

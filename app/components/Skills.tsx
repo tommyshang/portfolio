@@ -31,30 +31,16 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="max-w-[900px] mx-auto px-10 py-24 border-t border-[#161616]"
-    >
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
-        <h2 className="text-[13px] font-semibold text-[#ededed] tracking-tight pt-1">
+    <section id="skills" className="max-w-[1080px] mx-auto px-6 pb-4">
+      <div className="bg-surface border border-line rounded-[20px] p-7">
+        <h2 className="font-display text-sm font-bold tracking-widest uppercase text-accent2 mb-4">
           Skills
         </h2>
-        <div className="flex flex-col gap-7">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-5">
           {skills.map(({ category, items }) => (
-            <div key={category}>
-              <div className="text-[12px] text-[#555] mb-3 font-medium tracking-wide">
-                {category}
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {items.map((item) => (
-                  <span
-                    key={item}
-                    className="border border-[#1e1e1e] rounded-full px-3 py-1 text-[12px] text-[#555]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+            <div key={category} className="flex flex-col text-[15px]">
+              <b className="font-semibold">{category}</b>
+              <span className="text-muted">{items.join(", ")}</span>
             </div>
           ))}
         </div>

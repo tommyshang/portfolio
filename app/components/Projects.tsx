@@ -34,48 +34,37 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="max-w-[900px] mx-auto px-10 py-24 border-t border-[#161616]"
+      className="max-w-[1080px] mx-auto px-6 pb-12 grid grid-cols-1 md:grid-cols-2 gap-4"
     >
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
-        <h2 className="text-[13px] font-semibold text-[#ededed] tracking-tight pt-1">
-          Projects
-        </h2>
-        <div className="flex flex-col gap-4">
-          {projects.map(({ title, description, stack, link, linkLabel = "GitHub" }) => (
-            <div
-              key={title}
-              className="border border-[#161616] rounded-[10px] p-7 hover:border-[#2a2a2a] transition-colors duration-200"
+      {projects.map(({ title, description, stack, link, linkLabel = "GitHub" }) => (
+        <article
+          key={title}
+          className="bg-surface border border-line rounded-[20px] p-7 transition duration-200 hover:border-accent hover:-translate-y-0.5"
+        >
+          <div className="flex items-baseline justify-between gap-3">
+            <h3 className="font-display text-2xl font-bold">{title}</h3>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[15px] text-accent hover:text-accent2 transition-colors duration-200 whitespace-nowrap"
             >
-              <div className="flex items-start justify-between mb-2.5">
-                <div className="text-[15px] font-semibold text-[#ededed] tracking-tight">
-                  {title}
-                </div>
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[12px] text-[#333] hover:text-[#666] transition-colors duration-150 ml-4 shrink-0"
-                >
-                  {linkLabel} ↗
-                </a>
-              </div>
-              <p className="text-[14px] text-[#555] leading-[1.65] mb-4">
-                {description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {stack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="border border-[#1e1e1e] rounded-full px-3 py-1 text-[12px] text-[#555]"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+              {linkLabel}
+            </a>
+          </div>
+          <p className="text-base text-muted mt-2.5 mb-[18px]">{description}</p>
+          <div className="flex flex-wrap gap-2">
+            {stack.map((tech) => (
+              <span
+                key={tech}
+                className="border border-line bg-accent/10 rounded-full px-3 py-[3px] text-sm text-muted"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </article>
+      ))}
     </section>
   );
 }
